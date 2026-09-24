@@ -1,0 +1,6 @@
+{
+  "name": "CyberNexsus Edge AI SOC",
+  "description": "Local-First Edge AI Security Investigation Platform running on Snapdragon PC NPU/GPU/CPU with ONNX Runtime, CVSS v3.1 scoring, MITRE ATT&CK mapping, and Telegram dispatch.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #e2e8f0;
+    background-color: #080c14;
+  }
+  
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  }
+}
+
+/* Custom Cyber Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0b111e;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #06b6d4;
+}
+
+/* Cyber Glows and Utilities */
+.cyber-glow-cyan {
+  box-shadow: 0 0 15px -3px rgba(6, 182, 212, 0.35);
+}
+.cyber-glow-red {
+  box-shadow: 0 0 15px -3px rgba(239, 68, 68, 0.35);
+}
+.cyber-glow-amber {
+  box-shadow: 0 0 15px -3px rgba(245, 158, 11, 0.35);
+}
+.cyber-glow-emerald {
+  box-shadow: 0 0 15px -3px rgba(16, 185, 129, 0.35);
+}
+
+.radar-sweep {
+  background: conic-gradient(from 0deg, transparent 0deg 300deg, rgba(6, 182, 212, 0.25) 360deg);
+  animation: sweep 4s linear infinite;
+}
+
+@keyframes sweep {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Grid overlay */
+.cyber-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
